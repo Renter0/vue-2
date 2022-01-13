@@ -1,0 +1,55 @@
+.vue-router {
+  &__wrap {
+    padding: 5rem 0;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    background: #fff;
+    position: sticky;
+    top: 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  &__item {
+    &.item {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      transition: .3s ease-out;
+
+      &:hover {
+        border: 1px solid #888888;
+      }
+
+      .item {
+        &__title {
+          font-size: 2rem;
+          line-height: 1.2;
+          margin-bottom: 1rem;
+        }
+
+        &__brief {
+          font-size: 1.1rem;
+          line-height: 1.2;
+          color: #7c7c7c;
+          margin-top: auto;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
